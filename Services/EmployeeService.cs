@@ -4,7 +4,7 @@ using employee_operation.Repositories;
 
 namespace employee_operation.Services
 {
-    public class EmployeeService
+    public class EmployeeService : IEmployeeService
     {
         private readonly EmployeeRepository _employeeRepository;
 
@@ -48,12 +48,6 @@ namespace employee_operation.Services
                 .ToList();
     
             return employeesRes;
-        }
-
-        // Get an employee by ID
-        public Employee GetEmployeeById(int employeeId)
-        {
-            return _employeeRepository.GetEmployeeById(employeeId);
         }
 
         // Update an employee and return the updated employee
