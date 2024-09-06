@@ -6,7 +6,7 @@ namespace employee_operation.Controllers;
 
 [Route("api/employee")]
 [ApiController]
-public class EmployeeController : ControllerBase // Inherit from ControllerBase
+public class EmployeeController : ControllerBase
 {
     private readonly EmployeeService _employeeService;
 

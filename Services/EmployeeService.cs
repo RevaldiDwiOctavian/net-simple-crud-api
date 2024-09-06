@@ -69,7 +69,7 @@ namespace employee_operation.Services
             }
             catch (Exception e)
             {
-                throw new ArgumentException($"The BirthDate provided is not in a valid format. Please use dd/MM/yyyy instead.");
+                throw new ArgumentException($"The BirthDate provided is not in a valid format. Please use dd-MM-yyyy instead.");
             }
             
             return ConvertToResponseDto(_employeeRepository.UpdateEmployee(employee));
